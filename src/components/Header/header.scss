@@ -1,0 +1,75 @@
+.header {
+  .h1 {
+    font-family: "Comfortaa", cursive;
+    font-size: 9.6rem;
+  }
+
+  .h2 {
+    font-family: "Jaldi", sans-serif;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 0.8;
+    margin-bottom: 10rem;
+  }
+
+  .more {
+    font-family: "Jaldi", sans-serif;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    i {
+      font-size: 5rem;
+      line-height: 0;
+      transition: trasnform 1s;
+      animation: bounce-up 1s;
+      z-index: -99;
+    }
+
+    .link:hover ~ i {
+      transform: translate(0, 5px);
+      animation: bounce-down 2s, bouncing 3s linear 2s infinite reverse;
+    }
+  }
+}
+
+@keyframes bounce-down {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 7px);
+  }
+
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translate(0, 5px);
+  }
+
+  50% {
+    transform: translate(0, 7px);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translate(0, 5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

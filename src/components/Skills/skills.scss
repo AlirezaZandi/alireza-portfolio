@@ -1,0 +1,44 @@
+.skills {
+  font-family: "Jaldi", sans-serif;
+
+  .h1 {
+    font-size: 6.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .h2 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  .paragraph {
+    font-size: 3.2rem;
+  }
+
+  .list {
+    font-size: 3.2rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 2rem;
+    .skill {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px solid white;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      transition: all 0.3s;
+      .skill-header {
+        font-weight: 400;
+      }
+
+      &:hover {
+        background-color: white;
+        color: #2d3436;
+      }
+    }
+  }
+}
