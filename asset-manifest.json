@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d00c23d0.css",
+    "main.js": "/static/js/main.3fa87c26.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/todo.png": "/static/media/todo.460461906d03ddc7654d.png",
+    "static/media/todo-github.png": "/static/media/todo-github.600d0ba55124dda60428.png",
+    "static/media/calc.png": "/static/media/calc.5aa49bf2bf9362eae711.png",
+    "static/media/twitter.svg": "/static/media/twitter.b6402046a9c661671477ffbd1a322c16.svg",
+    "static/media/github.svg": "/static/media/github.14f93cc5a21f9dd816c4ca22c88da265.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.f7c8b6f46985f16e4569df87e6a2b54f.svg",
+    "static/media/instagram.svg": "/static/media/instagram.70f865f897db0486a628db6868f4e486.svg",
+    "index.html": "/index.html",
+    "main.d00c23d0.css.map": "/static/css/main.d00c23d0.css.map",
+    "main.3fa87c26.js.map": "/static/js/main.3fa87c26.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d00c23d0.css",
+    "static/js/main.3fa87c26.js"
+  ]
+}
