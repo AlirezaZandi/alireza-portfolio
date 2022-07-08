@@ -1,0 +1,95 @@
+.projects {
+  font-family: "Jaldi", sans-serif;
+
+  .h1 {
+    font-size: 6.4rem;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 4rem;
+    & > * {
+      margin-bottom: 2rem;
+    }
+    .project {
+      border: 4px solid #9e9e9e;
+      border-radius: 4px;
+      position: relative;
+      width: 290px;
+      height: 320px;
+      background-size: cover;
+      background-position: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      &:hover {
+        .info {
+          height: 100%;
+
+          background-color: #2d3436;
+
+          .header {
+            font-size: 3rem;
+          }
+
+          .description {
+            font-size: 2.4rem;
+          }
+
+          & > * {
+            width: 100%;
+          }
+
+          .link {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+      .info {
+        background-image: linear-gradient(to top, #2d3436, #d9d9d900);
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 3rem;
+        padding: 1rem 2rem;
+        &,
+        & * {
+          transition: all 0.6s;
+        }
+
+        & > * {
+          text-align: center;
+          width: 0;
+          white-space: nowrap;
+        }
+
+        .header {
+          font-size: 2.4rem;
+        }
+
+        .description {
+          font-size: 2rem;
+        }
+
+        .link {
+          opacity: 0;
+          visibility: hidden;
+          font-size: 2rem;
+          display: block;
+          transition: all 0.3s ease-out;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

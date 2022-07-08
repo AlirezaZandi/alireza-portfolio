@@ -7,21 +7,37 @@ import linkedin from "../../assets/linkedin.svg";
 
 type Props = {};
 
+const socials = [
+  {
+    img: instagram,
+    link: "https://www.instagram.com/calledalish/",
+  },
+  {
+    img: github,
+    link: "https://github.com/AlirezaZandi",
+  },
+  {
+    img: twitter,
+    link: "https://twitter.com/CallMeAlireza_",
+  },
+  {
+    img: linkedin,
+    link: "https://www.linkedin.com/in/alireza-zandi-717435222",
+  },
+];
+
 const Social = (props: Props) => {
   return (
     <div className='social'>
-      <a href='#'>
-        <img src={instagram} alt='instagram account link' />{" "}
-      </a>
-      <a href='#'>
-        <img src={twitter} alt='twitter account link' />{" "}
-      </a>
-      <a href='#'>
-        <img src={github} alt='github account link' />
-      </a>
-      <a href='#'>
-        <img src={linkedin} alt='linkedin account link' />{" "}
-      </a>
+      {socials.map((social, index) => {
+        return (
+          <div className='item' key={index}>
+            <a href={social.link} target='_blank' rel='noreferrer'>
+              <img src={social.img} alt='instagram account link' />{" "}
+            </a>
+          </div>
+        );
+      })}
     </div>
   );
 };

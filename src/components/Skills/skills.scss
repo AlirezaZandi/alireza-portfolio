@@ -23,7 +23,11 @@
     gap: 2rem 3rem;
     font-family: "Rubik", sans-serif;
     margin-bottom: 2rem;
+    @media only screen and (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
     .skill {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -34,7 +38,9 @@
       .skill-header {
         font-weight: 400;
       }
-
+      .icon {
+        font-size: 2rem;
+      }
       &:hover {
         background-color: white;
         color: #2d3436;

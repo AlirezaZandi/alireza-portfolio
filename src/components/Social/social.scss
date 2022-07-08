@@ -2,6 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .item {
+    width: min(5rem, 100%);
+    img {
+      width: 100%;
+    }
+  }
   & > * {
     margin: 0 2rem;
   }

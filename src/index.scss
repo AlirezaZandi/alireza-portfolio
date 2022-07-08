@@ -8,6 +8,13 @@
 
 html {
   font-size: 63.5%;
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 850px) {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -18,4 +25,12 @@ body {
 a {
   text-decoration: none;
   color: unset;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }

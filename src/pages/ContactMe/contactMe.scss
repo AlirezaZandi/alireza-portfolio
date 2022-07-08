@@ -1,0 +1,13 @@
+.contact-me-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @media only screen and (max-width: 680px) {
+    flex-direction: column;
+  }
+  & > * {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
